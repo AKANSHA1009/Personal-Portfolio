@@ -1,288 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@akansha1009</title>
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="icon" href="images/girl.png" type="image/jpeg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-  </head>
-  <body>
-
-    <header>
-      <nav>
-        <div class="logo">
-          <h1>&lt /akansha sharma &gt;</h1>
+<head>
+  <!-- Metadata and early theme selection -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Akansha Sharma | Quality Engineer II · AI-integrated Testing</title>
+  <meta name="description" content="Akansha Sharma, Quality Engineer II (client engagement at Adobe, via Infinite Computer Solutions). Test automation with Selenium, Playwright, TestNG, API testing, CI/CD and AI-integrated testing.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Akansha Sharma | Quality Engineer II">
+  <meta property="og:description" content="Test automation. Smarter feedback. Reliable AI products.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Akansha Sharma | Quality Engineer II">
+  <meta name="twitter:description" content="Quality engineering with a focus on AI-integrated testing.">
+  <script>
+    (() => {
+      let theme;
+      try { theme = localStorage.getItem('portfolio-theme'); } catch {}
+      document.documentElement.dataset.theme = theme === 'light' || theme === 'dark' ? theme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      let view;
+      try { view = localStorage.getItem('portfolio-view'); } catch {}
+      document.documentElement.dataset.view = view === 'personal' ? 'personal' : 'professional';
+    })();
+  </script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"Akansha Sharma","jobTitle":"Quality Engineer","description":"Quality Engineer II; client engagement at Adobe, employed by Infinite Computer Solutions. Focused on AI-integrated testing.","worksFor":{"@type":"Organization","name":"Infinite Computer Solutions"},"email":"mailto:akanshasharma9710@gmail.com","sameAs":["https://github.com/AKANSHA1009","https://www.linkedin.com/in/akanshasharma9710/"],"knowsAbout":["Test automation","Selenium","Playwright","Java","API testing","CI/CD","AI-assisted testing","Testing AI features"]}
+  </script>
+</head>
+<body>
+  <!-- Shared navigation -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="wordmark" href="#home" aria-label="Akansha, home">akansha<span aria-hidden="true">.</span></a>
+      <div class="nav-links" id="nav-links"><span class="nav-group nav-pro"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Learning</a></span><span class="nav-group nav-personal"><a href="#hobbies">Hobbies</a><a href="#routine">Routine</a><a href="#goals">Goals</a></span><a href="#contact">Contact</a></div>
+      <div class="nav-actions">
+        <div class="view-toggle" role="group" aria-label="Switch between professional and personal view">
+          <button type="button" class="view-btn" data-view-btn="professional" aria-pressed="true" aria-label="Show professional view">Work</button>
+          <button type="button" class="view-btn" data-view-btn="personal" aria-pressed="false" aria-label="Show personal view">Life</button>
         </div>
-        
-        <!-- Menu Toggle Button for Small Screens -->
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    
-        <div class="nav-links">
-          <ul class="nav-left">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <!-- <li><a href="#">Projects</a></li> -->
-            <li><a href="images/cv_Akansha1009.pd" download="Akansha_Sharma_Resume.pdf">Downloads</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    
-    
-    <main>
-      <section class="home" id="home">
-        <div class="container">
-            <div class="image-holder">
-                <h1>Akansha Sharma</h1>
-                <h2>@akansha1009</h2>
-                <br>
-                <div class="heading">
-                  <h3>
-                    <span id="typed-text"></span>
-                  </h3>
-                  
-                </div>
-                <p>A Front-End Developer and SDET with a keen eye for detail and a passion for crafting seamless, user-friendly web experiences. With expertise in modern frameworks like React, I build responsive and interactive interfaces that bring ideas to life. Beyond development, I specialize in automated testing, ensuring that every component is reliable, efficient, and bug-free. By combining creativity with precision, I create high-quality, scalable solutions that enhance both functionality and performance.<br> Let's build the future of the web—one pixel and test case at a time! </p>
-                <div class="socialmedia">
-                    <a href="https://github.com/AKANSHA1009" class="icon-btn" target="_blank">
-                        <span class="github-class"><i class="fa-brands fa-github"></i></span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/akanshasharma9710/" class="icon-btn" target="_blank">
-                        <span class="linkedln-class"><i class="fab fa-linkedin-in"></i></span>
-                    </a>
-                    <a href="mailto:akanshasharma9710@gmail.com" class="icon-btn" target="_blank">
-                        <span class="google-class"><i class="fab fa-google"></i></span>
-                    </a>
-                    <a href="https://www.instagram.com/akansha1009/" class="icon-btn" target="_blank">
-                        <span class="instagram-class"><i class="fab fa-instagram"></i></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="aboutme" id="about">
-        <div class="container2">
-            <div class="intro-text">
-                <h1>Get a glimpse of who I am!</h1>
-                <br><br>
-                <span id="alpha">अ </span> <span id="alpha2">Kansha</span>
-                <br><br>
-                <p>   Hello! I'm Akansha Sharma!!
-                  <br>
-                  My journey into web development is rooted in a deep love for learning and problem-solving. Growing up in New Delhi, I was drawn to the sciences, studying C++ alongside my core subjects in school. This curiosity for logic and structure led me to pursue a Bachelor's in Elementary Education (B.El.Ed) with a specialization in Chemistry at Delhi University. Teaching became my first passion, allowing me to simplify complex ideas and share knowledge with others.
-                  <br>
-                  However, my fascination with technology and its power to create impactful solutions led me to explore coding beyond the classroom. Determined to turn my interest into expertise, I pursued a Front-End Development certification from iNeuron Institute. With each project, I found joy in bringing ideas to life through clean, user-friendly, and interactive web experiences.
-                  <br>
-                  Beyond coding, I believe in giving back to the community. Teaching remains close to my heart, and I dedicate time to working with an NGO, sharing the gift of learning with others. When I'm not coding or mentoring, you'll likely find me swimming—my way of unwinding and staying energized.
-                  <br>
-                  As I continue to grow as a developer, I'm eager to take on new challenges, refine my skills, and contribute to meaningful projects. The best is yet to come, and I'm excited about the journey ahead!
-    
-                </p>
-                <a id="download" href="images/cv_Akansha1009.pdf" class="download-button" download>My Resume</a>
-            </div>
-
-            <div class="profile-pic">
-                <img src="images/Me.Photo.jpg" alt="ProPic"> 
-            </div>
-        </div>
-        
-    </section>
-    
-    <section class="skills" id="skill">
-        <div class="header-skills">
-            <h2>My <span>Skills</span></h2>
-            <p>Let me unveil my top-notch talents!</p>
-        </div>
-    
-        <div class="skill-container">
-            <div class="skill">
-                <i class="fab fa-html5" style="color: #E44D26;"></i>
-                <span>HTML5</span>
-            </div>
-            <div class="skill">
-                <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
-                <span>CSS</span>
-            </div>
-            <div class="skill">
-                <i class="fab fa-js" style="color: #F7DF1E;"></i>
-                <span>JavaScript</span>
-            </div>
-            <div class="skill">
-                <i class="fab fa-react" style="color: #61DAFB;"></i>
-                <span>React</span>
-            </div>
-            <div class="skill">
-                <i class="fab fa-git-alt" style="color: #F1502F;"></i>
-                <span>Git</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-robot" style="color: #4CAF50;"></i>
-                <span>Selenium</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-vial" style="color: #FF5733;"></i>
-                <span>Postman</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-database" style="color: #4479A1;"></i>
-                <span>MySQL</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-users" style="color: #FFC107;"></i>
-                <span>Soft Skills</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-vial" style="color: #FF5733;"></i>
-                <span>TestNG</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-cogs" style="color: #4CAF50;"></i>
-                <span>CI/CD</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-robot" style="color: #00BCD4;"></i>
-                <span>Test Automation</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-sync-alt" style="color: #9C27B0;"></i>
-                <span>Agile Methodologies</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-clipboard-check" style="color: #3F51B5;"></i>
-                <span>Manual Testing</span>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- Skills Section -->
-    
-    
-  <section class="experience" id="experience">
-    <div class="experienceBar">
-      <h2 id="Slantingtext">
-        My <span class="highlight">Experience</span>
-    </h2>
-    
-        <h2 class="heading23">
-            Curious about my current quest? Here's the map—check out my job description!
-        </h2>
-
-        <div class="content-holder">
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-front">
-                        <img src="images/whythis.jpg" alt="Frontend Developer">
-                        <h2>Front-end Developer</h2>
-                        <h3>Kangra Co-operative Bank</h3>
-                        <p>Click to see details</p>
-                    </div>
-                    <div class="card-back">
-                        <h2>Roles and Responsibilities</h2>
-                        <ul>
-                            <li>Develop and maintain user-facing features and components.</li>
-                            <li>Monitor and improve front-end performance.</li>
-                            <li>Translate designs into high-quality code.</li>
-                            <li>Work with Agile methodologies and perform unit testing.</li>
-                            <li>Troubleshoot and debug applications for optimal performance.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-
-       
-          <div class="wrapper-experience">
-            <div class="internship-heading" onclick="toggleDetails()">
-                <h2>Internship Experiences That Built My Skillset</h2>
-                <i class="fas fa-chevron-down"></i> <!-- FontAwesome Icon -->
-            </div>
-            <div class="internship-details" id="details">
-                <div class="internship">
-                    <h3> 1: Educationist</h3>
-                    <p><strong>Organisation:</strong> Bodhi Tree Foundation</p>
-                    <p><strong>Duration:</strong> June 2022 - August 2022</p>
-                    <p class="internship-description">
-                        - Taught Mathematics to Class 9 students.<br>
-                        - Supervised and guided new interns on effective teaching methodologies.<br>
-                        - Conducted interactive learning sessions to enhance students' engagement.
-                    </p>
-                </div>
-                <div class="internship">
-                    <h3> 2: Teacher</h3>
-                    <p><strong>Company:</strong> Kendriya Vidyalaya</p>
-                    <p><strong>Duration:</strong> September 2021 - November 2021</p>
-                    <p class="internship-description">
-                        - Taught Science to students up to Class 9 in a Government school.<br>
-                        - Designed engaging lesson plans to simplify complex scientific concepts.<br>
-                        - Assisted in organizing educational activities and hands-on experiments.
-                    </p>
-                </div>
-            </div>
-        </div>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><img class="icon theme-moon" src="assets/moon.svg" alt="" width="20" height="20"><img class="icon theme-sun" src="assets/sun.svg" alt="" width="20" height="20"></button>
+        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation" title="Open navigation"><img class="icon" src="assets/menu.svg" alt="" width="20" height="20"></button>
       </div>
-      
-        </div>
-    </div>
-</section>
-
-
-
-<section class="contact" id="contact">
-  <div class="contact-container">
-      <div class="contact-info">
-          <h2>Let's Connect</h2>
-          <p>Let's connect—whether it's about tech, projects, or simply sharing ideas!</p>
-          <div class="contact-details">
-              <p><i class="fas fa-envelope"></i> akanshasharma9710@gmail.com</p>
-              <p><i class="fas fa-phone"></i> +91 981 874 0272</p>
-              <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
-          </div>
-          <div class="social-links">
-              <a href="https://github.com/AKANSHA1009"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/akanshasharma9710/"><i class="fab fa-linkedin"></i></a>
-              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-          </div>
+    </nav>
+  </header>
+  <main id="main">
+    <!-- 01 Hero -->
+    <section class="hero container professional-only" id="home" aria-labelledby="hero-title">
+      <canvas id="network" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> <span aria-hidden="true">📍</span> NEW DELHI, INDIA <span class="divider">/</span> QUALITY ENGINEERING</p>
+        <p class="hero-name">Hi, I'm Akansha Sharma <span class="wave" aria-hidden="true">👋</span></p>
+        <h1 id="hero-title">Quality Engineer II<br>building <span>AI-integrated<br class="desktop-break"> testing.</span></h1>
+        <p class="hero-intro">Test automation and AI-integrated quality — faster feedback, smarter coverage, and reliable AI-powered products.</p>
+        <p class="focus-line"><span class="mono">MY FOCUS</span> <span id="typed-focus" aria-hidden="true">Test Automation</span><span class="sr-only">Test Automation, AI-Assisted Testing, Testing AI Features, and Quality at Scale.</span></p>
+        <div class="hero-actions"><a class="button primary" href="#projects">View Projects <span aria-hidden="true">↗</span></a><a class="button secondary" href="#contact">Contact Me <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-quicklinks"><a href="mailto:akanshasharma9710@gmail.com"><span aria-hidden="true">✉</span> akanshasharma9710@gmail.com</a><a href="https://www.linkedin.com/in/akanshasharma9710/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/AKANSHA1009" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+        <p class="hero-note">Using AI to test smarter &amp; testing AI-powered, agentic features for quality at scale.</p>
       </div>
-
-      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-          <input type="hidden" name="access_key" value="24b81e73-34ca-480d-a042-6a28852ebd90">
-          <h2>Contact Me</h2>
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Write your message..." required></textarea>
-          <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
-      </form>
-  </div>
-</section>
-<button id="scrollToTopBtn">
-  <i class="fas fa-arrow-up"></i>
-</button>
-
-    </main>
-
-    <footer>
-      
-      <h4 class="footnote">Made with ❤️ by Akansha Sharma</h4>
-    </footer>
-  </body>
-
-  <script src="./typed.js-master/lib/typed.min.js"></script>
-    
-    <!-- Add jquery cdn -->
-    <scrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-
-  <script src="script.js"></script>
+      <div class="hero-bottom"><span>Client engagement at <strong>Adobe</strong><br><span class="employer">Employer: Infinite Computer Solutions</span></span><a href="#about" class="text-link">A little more about me <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <!-- 02 About -->
+    <section class="section professional-only" id="about" aria-labelledby="about-title"><div class="container about-grid">
+      <div class="section-heading reveal"><p class="eyebrow">01 / ABOUT</p><h2 id="about-title">Curiosity meets<br><span class="muted">a quality mindset.</span></h2></div>
+      <div class="about-copy reveal"><p class="lead">I care about what happens between “it works” and “we can trust it.”</p><p>My path started in education, with a B.El.Ed specializing in Chemistry at Delhi University. Teaching taught me to break down complex problems and ask better questions. Those habits now shape how I approach software quality.</p><p>My experience spans automated web and API testing, regression suites, and SQL data validation. I’m staying in quality engineering and building toward AI-integrated testing: using AI to support testing, and learning how to evaluate AI-powered features without treating their outputs as guaranteed truth.</p><div class="quick-facts"><div><span class="mono">FOUNDATION</span><strong>SDET &amp; test automation</strong></div><div><span class="mono">NEXT CHAPTER</span><strong>AI-integrated quality</strong></div><div><span class="mono">OUTSIDE WORK</span><strong>Teaching &amp; swimming</strong></div></div><a class="text-link" href="assets/Akansha-Sharma-Resume.pdf" download>Download my resume (PDF) <span aria-hidden="true">↓</span></a></div>
+      <figure class="portrait reveal"><img src="assets/akansha.webp" alt="Akansha Sharma" width="600" height="800" loading="lazy" decoding="async"><figcaption>Akansha Sharma <span>New Delhi, India</span></figcaption></figure>
+    </div></section>
+    <!-- 03 Experience -->
+    <section class="section professional-only" id="experience" aria-labelledby="experience-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">02 / EXPERIENCE</p><h2 id="experience-title">A foundation in <span class="muted">reliability.</span></h2></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-date mono">MAR 2026 — PRESENT<span class="status">CURRENT</span></div><div class="timeline-content"><h3 class="company">Adobe</h3><p class="role">Quality Engineer II</p><p class="employer">Client engagement at Adobe | Employer: Infinite Computer Solutions</p><p class="small muted">Quality Engineer II, Adobe (via Infinite Computer Solutions), March 2026 – Present</p><ul><li>Designed, developed and maintained scalable, maintainable test automation frameworks and scripts in Java and JavaScript using their in-house framework for cross-browser web applications.</li><li>Tested AI-powered and agentic features, validating response quality, relevance, consistency and error handling for non-deterministic outputs across multiple prompt scenarios.</li><li>Applied AI-assisted testing practices, using GitHub Copilot and LLM tools to accelerate test case generation, script development and failure analysis while reviewing all output for accuracy.</li><li>Performed functional, API, integration, system and regression testing for new feature releases, validating requests, responses, status codes and data contracts.</li><li>Executed manual test cases and ran build sanity and smoke checks on each release, providing quick feedback to engineering and product teams.</li><li>Analyzed automation failures, debugged root causes and reduced flaky tests, improving test stability and automation coverage.</li><li>Collaborated with development, DevOps and product teams in an Agile/Scrum environment through sprint planning, backlog refinement, test estimation and release readiness reviews.</li><li>Used Git for version control, code reviews and branching of automation code.</li></ul></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date mono">JUL 2022 — JAN 2026</div><div class="timeline-content"><h3>Kangra Co-operative Bank Ltd</h3><p class="role">Software Development Engineer in Test</p><ul><li>Developed automated test scripts with Java and JavaScript for banking application workflows.</li><li>Built web and API checks using Selenium, Postman, and TestNG, extending automated coverage and reducing manual testing effort.</li><li>Maintained regression suites and validated database consistency with SQL to check existing behavior after updates.</li><li>Collaborated with development teams in Agile workflows to support continuous integration and delivery.</li></ul></div></article>
+      </div>
+      <div class="experience-sub reveal"><p class="eyebrow">INTERNSHIPS</p><h3>Where it started</h3></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-date mono">JUN — AUG 2022</div><div class="timeline-content"><h3>Bodhi Tree Foundation</h3><p class="role">Educationist · Internship</p><p>Taught Class 9 mathematics, guided new interns on teaching methods, and led interactive learning sessions.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date mono">SEP — NOV 2021</div><div class="timeline-content"><h3>Kendriya Vidyalaya</h3><p class="role">Teacher · Internship</p><p>Taught science up to Class 9 and designed lessons and hands-on activities to simplify complex concepts.</p></div></article>
+      </div>
+    </div></section>
+    <!-- 04 Skills -->
+    <section class="section professional-only" id="skills" aria-labelledby="skills-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">03 / SKILLS</p><h2 id="skills-title">The toolkit. <span class="muted">Built for quality.</span></h2><p>Tools, frameworks and practices across test automation, API, AI-integrated testing, CI/CD and process.</p></div>
+      <div class="skills-grid">
+        <article class="skill-group reveal"><span class="mono group-number">01</span><h3>Automation</h3><div class="tags"><span>Selenium WebDriver</span><span>Playwright</span><span>TestNG</span><span>BDD (Cucumber)</span><span>Hybrid framework</span><span>Data-driven</span><span>Keyword-driven</span><span>Page Object Model</span></div></article>
+        <article class="skill-group reveal"><span class="mono group-number">02</span><h3>Languages</h3><div class="tags"><span>Java</span><span>JavaScript</span><span>SQL</span></div></article>
+        <article class="skill-group reveal"><span class="mono group-number">03</span><h3>API &amp; Services</h3><div class="tags"><span>REST API testing</span><span>Web Services</span><span>Postman</span><span>REST Assured</span><span>JSON/XML</span></div></article>
+        <article class="skill-group reveal"><span class="mono group-number">04</span><h3>AI in Testing</h3><div class="tags"><span>AI-assisted test generation</span><span>LLM testing</span><span>Prompt-based test design</span><span>Agentic AI feature testing</span><span>GitHub Copilot</span></div></article>
+        <article class="skill-group reveal"><span class="mono group-number">05</span><h3>CI/CD &amp; Tools</h3><div class="tags"><span>Git</span><span>Jenkins</span><span>JIRA</span></div></article>
+        <article class="skill-group reveal"><span class="mono group-number">06</span><h3>Testing</h3><div class="tags"><span>Functional</span><span>Regression</span><span>Integration</span><span>System</span><span>Sanity/Smoke</span><span>API</span><span>Cross-browser</span><span>Database Testing</span></div></article>
+        <article class="skill-group reveal"><span class="mono group-number">07</span><h3>Process</h3><div class="tags"><span>SDLC</span><span>STLC</span><span>Defect Life Cycle</span><span>Agile/Scrum</span><span>Test Estimation</span><span>Test Status Reporting</span></div></article>
+        <article class="skill-group reveal"><span class="mono group-number">08</span><h3>Other</h3><div class="tags"><span>Microsoft Office (Excel, Word, PowerPoint)</span><span>Test Data Management</span></div></article>
+      </div>
+    </div></section>
+    <!-- 05 Projects -->
+    <section class="section professional-only" id="projects" aria-labelledby="projects-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">04 / PROJECTS</p><h2 id="projects-title">Less repetition.<br><span class="muted">More useful work.</span></h2><p>Projects documented in my existing resume. AI case studies will appear here when there is verified work to share.</p></div>
+      <div class="filters" role="group" aria-label="Filter projects"><button class="filter active" type="button" data-project-filter="all" aria-pressed="true">All</button><button class="filter" type="button" data-project-filter="automation" aria-pressed="false">Test Automation</button><button class="filter" type="button" data-project-filter="development" aria-pressed="false">Web Apps</button></div><p class="sr-only" id="project-status" role="status" aria-live="polite"></p>
+      <div class="projects-grid">
+        <article class="project-card reveal" data-project="automation"><div class="project-visual visual-automation" aria-hidden="true"><span class="mono">AUTOMATION / 01</span><div class="workflow"><span>Sign in</span><b>↓</b><span>Upload resume</span><b>↓</b><span class="workflow-last">Schedule with cron</span></div></div><div class="project-body"><p class="eyebrow">TEST AUTOMATION</p><h3>Naukri resume automation</h3><p>Automated sign-in and resume upload on Naukri.com, scheduled with a daily cron job to reduce repetitive profile maintenance.</p><div class="tags"><span>Selenium</span><span>JavaScript</span><span>AutoIT</span><span>Cron</span></div></div></article>
+        <article class="project-card reveal" data-project="development"><div class="project-visual visual-inventory" aria-hidden="true"><span class="mono">WEB APPLICATION / 02</span><div class="inventory-art"><div><span>DEVICE INVENTORY</span><span>+</span></div><i></i><i></i><i></i><div><span>ADD</span><span>SEARCH</span><span>DELETE</span></div></div></div><div class="project-body"><p class="eyebrow">WEB APPLICATION</p><h3>Device Inventory</h3><p>A device inventory application for adding, deleting, and searching records, with user and device information in one place.</p><div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Postman</span></div></div></article>
+        <article class="project-card reveal" data-project="development"><div class="project-visual visual-portfolio" aria-hidden="true"><span class="mono">PERSONAL WEBSITE / 03</span><div class="portfolio-art">akansha<span>.</span><div></div><div></div></div></div><div class="project-body"><p class="eyebrow">WEB APPLICATION</p><h3>Personal portfolio</h3><p>A responsive personal website presenting my experience, projects, and growing focus in quality engineering.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="text-link" href="#home">View website <span aria-hidden="true">↗</span></a></div></article>
+      </div>
+      <div class="project-empty" id="project-empty" hidden><h3>No published work in this category yet.</h3><p>More projects will appear here as I publish them.</p></div>
+    </div></section>
+    <!-- 06 Learning journey -->
+    <section class="section professional-only" id="journey" aria-labelledby="journey-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">05 / LEARNING JOURNEY</p><h2 id="journey-title">Always a student.<br><span class="muted">Especially of what’s next.</span></h2><p>The foundation behind my move into AI-integrated quality engineering.</p></div>
+      <ol class="roadmap">
+        <li class="reveal"><span class="status">DONE</span><div><h3>Education</h3><p>B.El.Ed, Chemistry specialization · Delhi University · 2015–2019.</p></div></li>
+        <li class="reveal"><span class="status">DONE</span><div><h3>Courses &amp; certifications</h3><p>iNeuron Full Stack Java Developer course.</p></div></li>
+      </ol>
+    </div></section>
+    <!-- ===== PERSONAL VIEW ===== -->
+    <!-- Personal hero -->
+    <section class="hero container personal-only personal-hero" id="personal-home" aria-labelledby="personal-title">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> OFF THE CLOCK <span class="divider">/</span> THE PERSONAL SIDE</p>
+        <p class="hero-name">Hey again, I'm Akansha <span class="swing" aria-hidden="true">🌸</span></p>
+        <h1 id="personal-title">A soft girl in a<br><span>whimsical little world.</span></h1>
+        <p class="hero-intro">Beyond the test suites — books, early runs, quiet water, teaching, and little daydreams.</p>
+        <div class="hero-actions"><a class="button primary" href="#hobbies">Into my world <span aria-hidden="true">↓</span></a><a class="button secondary" href="https://pin.it/2zBFtB1bY" target="_blank" rel="noopener noreferrer">My Pinterest <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+    <!-- Hobbies -->
+    <section class="section personal-only" id="hobbies" aria-labelledby="hobbies-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">A LENS INTO MY WORLD</p><h2 id="hobbies-title">Beyond the <span class="muted">test suites.</span></h2><p>Soft girl in a whimsical little world — a little of what I love when I step away from the keyboard.</p></div>
+      <div class="beyond-grid">
+        <article class="beyond-card reveal"><div class="beyond-icon" aria-hidden="true">📖</div><h3>Reading</h3><p>Currently keeping me company: <em>Tuesdays with Morrie</em>, <em>My Friends</em> by Fredrik Backman, and <em>Before the Coffee Gets Cold</em>.</p></article>
+        <article class="beyond-card reveal"><div class="beyond-icon" aria-hidden="true">🏃‍♀️</div><h3>Morning runs</h3><p>Early starts, fresh air, and a clear head before the day begins.</p></article>
+        <article class="beyond-card reveal"><div class="beyond-icon" aria-hidden="true">🏊‍♀️</div><h3>Swimming</h3><p>My reset button — quiet laps that balance focus with calm.</p></article>
+        <article class="beyond-card reveal"><div class="beyond-icon" aria-hidden="true">🎓</div><h3>Teaching at an NGO</h3><p>Giving back the way I started — helping students make sense of tricky ideas.</p></article>
+      </div>
+    </div></section>
+    <!-- Daily routine -->
+    <section class="section personal-only" id="routine" aria-labelledby="routine-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">A DAY, ROUGHLY</p><h2 id="routine-title">My little <span class="muted">routine.</span></h2></div>
+      <ol class="routine">
+        <li class="reveal"><span class="routine-time mono">6:00</span><div class="routine-body"><h3>Slow start</h3><p>Wake up gently — a quiet moment before the noise.</p></div></li>
+        <li class="reveal"><span class="routine-time mono">6:30</span><div class="routine-body"><h3>Morning run</h3><p>Fresh air and a clear head to set the tone for the day.</p></div></li>
+        <li class="reveal"><span class="routine-time mono">9:00</span><div class="routine-body"><h3>Deep work</h3><p>Test automation, AI-feature checks, and plenty of coffee.</p></div></li>
+        <li class="reveal"><span class="routine-time mono">6:00</span><div class="routine-body"><h3>Swim</h3><p>Quiet laps — my favourite reset button.</p></div></li>
+        <li class="reveal"><span class="routine-time mono">8:00</span><div class="routine-body"><h3>Read &amp; teach</h3><p>A chapter of a novel, or a session with my NGO students.</p></div></li>
+        <li class="reveal"><span class="routine-time mono">10:00</span><div class="routine-body"><h3>Wind down</h3><p>Moodboards, daydreams, and lights out.</p></div></li>
+      </ol>
+    </div></section>
+    <!-- Vibe wall -->
+    <section class="section personal-only" id="vibe" aria-labelledby="vibe-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">CURRENT VIBES</p><h2 id="vibe-title">My mood <span class="muted">wall.</span></h2><p>The little things keeping me company lately.</p></div>
+      <div class="vibe-wall" aria-hidden="true"><span class="vibe-tile">🌸</span><span class="vibe-tile">📚</span><span class="vibe-tile">☕</span><span class="vibe-tile">🏊‍♀️</span><span class="vibe-tile">🌿</span><span class="vibe-tile">🏃‍♀️</span><span class="vibe-tile">🪻</span><span class="vibe-tile">✨</span><span class="vibe-tile">🌙</span><span class="vibe-tile">📖</span><span class="vibe-tile">🫖</span><span class="vibe-tile">💮</span></div>
+      <div class="pin-callout reveal">
+        <div><p class="eyebrow">AESTHETIC CORNER</p><h3>Jasmine &amp; Daydreams <span aria-hidden="true">🪻✨</span></h3><p>My little whimsical world of moodboards, cozy reads and soft inspiration.</p></div>
+        <a class="button secondary" href="https://pin.it/2zBFtB1bY" target="_blank" rel="noopener noreferrer">Peek at my Pinterest <span aria-hidden="true">↗</span></a>
+      </div>
+    </div></section>
+    <!-- Future plans -->
+    <section class="section personal-only" id="goals" aria-labelledby="goals-title"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">FUTURE PLANS</p><h2 id="goals-title">Little <span class="muted">goals.</span></h2><p>A few things I'm keeping, and a few I'm reaching for.</p></div>
+      <ul class="goals">
+        <li class="reveal is-done"><span class="goal-check" aria-hidden="true"></span>Teach regularly at the NGO</li>
+        <li class="reveal is-done"><span class="goal-check" aria-hidden="true"></span>Keep up morning runs</li>
+        <li class="reveal is-done"><span class="goal-check" aria-hidden="true"></span>Swim every week</li>
+        <li class="reveal"><span class="goal-check" aria-hidden="true"></span>Read more fiction this year</li>
+        <li class="reveal"><span class="goal-check" aria-hidden="true"></span>Learn to bake something new</li>
+        <li class="reveal"><span class="goal-check" aria-hidden="true"></span>Travel somewhere I've never been</li>
+      </ul>
+      <div class="stats reveal">
+        <div class="stat"><strong data-count="24">0</strong><span>Books on this year's shelf</span></div>
+        <div class="stat"><strong data-count="5">0</strong><span>Morning runs a week</span></div>
+        <div class="stat"><strong data-count="3">0</strong><span>Years teaching</span></div>
+      </div>
+      <p class="small muted">A few numbers above are personal targets — easy to tweak anytime.</p>
+    </div></section>
+    <!-- 07 Contact -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-grid">
+      <div class="reveal"><p class="eyebrow">07 / CONTACT</p><h2 id="contact-title">Let’s talk<br><span>quality.</span></h2><p>For quality engineering opportunities, testing challenges, or a conversation about reliable software.</p><a class="contact-email" href="mailto:akanshasharma9710@gmail.com">akanshasharma9710@gmail.com <span aria-hidden="true">↗</span></a><div class="social-links"><a href="https://www.linkedin.com/in/akanshasharma9710/" target="_blank" rel="noopener noreferrer">LinkedIn ↗<span class="sr-only"> (opens in a new tab)</span></a><a href="https://github.com/AKANSHA1009" target="_blank" rel="noopener noreferrer">GitHub ↗<span class="sr-only"> (opens in a new tab)</span></a></div></div>
+      <form id="contact-form" class="contact-form reveal" action="mailto:akanshasharma9710@gmail.com" method="get"><div class="form-field"><label for="contact-name">Name</label><input id="contact-name" name="name" autocomplete="name" required maxlength="120" placeholder="Your name"></div><div class="form-field"><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com"></div><div class="form-field"><label for="contact-message">Message</label><textarea id="contact-message" name="message" required maxlength="5000" rows="4" placeholder="What’s on your mind?"></textarea></div><button class="button primary" type="submit">Open Email Draft <span aria-hidden="true">↗</span></button><p class="small muted">Opens your email app. Nothing is sent automatically.</p><p id="form-status" class="small" role="status" aria-live="polite"></p></form>
+    </div></section>
+  </main>
+  <!-- 09 Footer -->
+  <footer class="container footer"><a class="wordmark" href="#home">akansha<span>.</span></a><p>© <span id="year">2026</span> Akansha Sharma</p><div class="social-links"><a href="https://github.com/AKANSHA1009">GitHub</a><a href="https://www.linkedin.com/in/akanshasharma9710/">LinkedIn</a><a href="mailto:akanshasharma9710@gmail.com">Email</a></div></footer>
+  <a class="icon-button back-to-top" href="#home" aria-label="Back to top" title="Back to top" hidden><img class="icon" src="assets/arrow-up.svg" alt="" width="20" height="20"></a>
+</body>
 </html>
-
-
